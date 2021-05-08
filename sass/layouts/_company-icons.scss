@@ -1,0 +1,25 @@
+.company-icons {
+  display: flex;
+  width: calc(100% / 6 - 15px);
+}
+.company-icons__item + .company-icons__item {
+  margin-left: 30px;
+}
+.company-icons__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--link-icon);
+  border-radius: 4px;
+  fill: var(--link-icon);
+
+  transition: fill var(--duration) var(--cubic),
+    border var(--duration) var(--cubic);
+}
+.company-icons__link:hover,
+.company-icons__link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}

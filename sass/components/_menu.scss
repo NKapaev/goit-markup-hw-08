@@ -1,0 +1,28 @@
+.menu {
+  display: inline-flex;
+}
+.menu__item {
+  @extend %font-settings;
+  color: var(--black-text-color);
+}
+.menu__item:not(:last-child) {
+  @extend %margin-right;
+}
+.menu__link {
+  padding: 32px 0;
+}
+.menu__link--current {
+  color: var(--accent-color);
+  position: relative;
+}
+.menu__link--current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+}

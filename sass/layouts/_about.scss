@@ -1,0 +1,30 @@
+.about-section {
+  padding-top: 0;
+}
+.about {
+  display: flex;
+}
+.about__item {
+  position: relative;
+  width: calc(100% / 3 - 15px);
+}
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
+.about__description {
+  margin: 0;
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--white-text-color);
+  text-transform: uppercase;
+}

@@ -1,0 +1,17 @@
+.contacts {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__item:not(:last-child) {
+  @extend %margin-right;
+}
+.contacts__item {
+  @extend %font-settings;
+  color: var(--main-text-color);
+}
