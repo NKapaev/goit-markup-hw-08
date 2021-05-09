@@ -33,3 +33,24 @@
   text-transform: uppercase;
   color: var(--white-text-color);
 }
+
+@media screen and (min-width: 480px) {
+  max-width: 480px;
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  .hero__content {
+    width: calc(100% - 12px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
+}
