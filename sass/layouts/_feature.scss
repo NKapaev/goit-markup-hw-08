@@ -19,9 +19,6 @@
   text-transform: uppercase;
   color: var(--black-text-color);
 }
-.feature__text {
-  margin-bottom: 0;
-}
 .feature__item--antenna::before {
   background-image: url(../images/features/antenna.svg);
 }
