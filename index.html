@@ -35,6 +35,36 @@
                         </svg>
                         +38 096 111 11 11</a></li>
                 </ul>
+                <button class="menu-button" type="button" data-menu-button aria-expanded="false">
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" data-menu>
+                    <nav>
+                    <ul class="list mobile-menu">
+                        <li class="mobile-menu__item"><a class="link mobile-menu__link mobile-menu__link--current" href="./index.html">Студия</a></li>
+                        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Контакты</a></li>
+                    </ul>
+                    </nav>
+
+                    <ul class="list mobile-contacts">
+                       
+                        <li class="mobile-contacts__item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="mobile-contacts__item"><a class="link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+
+                    <ul class="list mobile-social">
+                        <li class="mobile-social__item"><a class="link" href="">Instagram</a></li>
+                        <li class="mobile-social__item"><a class="link" href="">Twitter</a></li>
+                        <li class="mobile-social__item"><a class="link" href="">Facebook</a></li>
+                        <li class="mobile-social__item"><a class="link" href="">Linkedin</a></li>
+                    </ul>
+
+                </div>
         </div>
     </header>
     <main>
@@ -423,6 +453,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

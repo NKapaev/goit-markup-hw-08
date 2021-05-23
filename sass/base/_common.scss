@@ -15,6 +15,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+body.modal-open {
+  overflow: hidden;
+}
 address {
   font-style: normal;
 }
