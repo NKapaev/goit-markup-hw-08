@@ -170,19 +170,6 @@ button {
   bottom: 0;
 }
 
-.menu-container {
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 48px 40px;
-  background-color: var(--white-text-color);
-}
-
 .mobile-menu {
   font-size: 40px;
   color: var(--black-text-color);
@@ -214,6 +201,7 @@ button {
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-social__item {
@@ -234,15 +222,28 @@ button {
   padding-left: 0;
 }
 
+.mobile-menu-container {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  background-color: var(--white-text-color);
+}
+
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
-  .menu-container {
+  .mobile-menu-container {
     z-index: 1;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
-  .menu-container.is-open {
+  .mobile-menu-container.is-open {
     display: block;
   }
 }
@@ -717,7 +718,7 @@ button {
   margin-left: auto;
 }
 
-.menu-container {
+.mobile-menu-container {
   display: none;
 }
 
@@ -731,7 +732,7 @@ button {
     border: none;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 2;
   }
   .menu-button:hover, .menu-button:focus {
     fill: var(--accent-color);
@@ -1067,8 +1068,6 @@ button {
 }
 
 .project {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -1136,5 +1135,27 @@ button {
 
 .project-description__filter-name {
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__item {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
 /*# sourceMappingURL=main.css.map */
