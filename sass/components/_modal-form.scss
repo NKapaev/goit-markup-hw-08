@@ -64,8 +64,12 @@
   margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
+    display: block;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
+
+    text-align: center;
+    vertical-align: middle;
   }
 }
 .modal-form__checkbox-label:focus ~ .modal-form__check-icon {

@@ -579,8 +579,11 @@ button {
 
 @media screen and (max-width: 767px) {
   .modal-form__checkbox-label {
+    display: block;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
+    text-align: center;
+    vertical-align: middle;
   }
 }
 
