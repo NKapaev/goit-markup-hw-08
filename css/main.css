@@ -496,6 +496,11 @@ button {
   background-color: var(--white-text-color);
 }
 
+.modal__btn-close:hover, .modal__btn-close:focus {
+  fill: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+
 .modal__title {
   margin-top: 0;
   margin-bottom: 12px;
